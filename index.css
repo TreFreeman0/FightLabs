@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito:wght@300&family=Poppins:wght@200&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family:'Poppins',sans-serif;
+}
+h1,h2,h3{
+    text-decoration: underline solid;
+    text-decoration-color: #F1CB00;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+section:nth-child(even){
+    background-color: #E6E9EC;
+}
+.fa-flask{
+    color: #F1CB00;
+}
+.navbar{
+    background-color:rgba(0, 0, 0, 0.9);
+}
+
+.navbar a{
+    color: white ;
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    text-decoration-color: #F1CB00;
+    text-decoration-thickness: 2px;
+    
+    color: white;
+}
+.navbar li a:active{
+    color: black;
+}
+
+ .navbar-toggler.custom-toggler{
+    border-color: black;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.hero-img{
+    background-image: url(./img/anastase-maragos-V0kJuMcEujI-unsplash.jpg);
+    height:100vh;
+}
+.mask{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+}
+.mission-section,.classes-section,.get-started-section,.accordion-section{
+    /* margin-top: 100px; */
+    padding-top: 20px;
+}
+
+.about-section{
+    height: auto;
+    /* overflow: hidden; */
+}
+.about-section img{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.card{
+    margin-bottom: 10px;
+    border-radius: 15px;
+    /* box-shadow: 2px black; */
+}
+
+.get-started-section .card{
+    margin-top: 80px;
+    height: 400px;
+    width: 400px;
+    border-radius: 15px;
+}
+a{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+form{
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 10px;
+    max-width: 500px;
+}
+/* .accordion-section{
+    margin-top: 100px;
+} */
+.accordion-item{
+    margin-top: 20px;
+    height:70px;
+}
+.accordion h2{
+    text-decoration: none;
+}
+.accordion button{
+    text-transform: uppercase;
+    font-weight: 900;
+}
