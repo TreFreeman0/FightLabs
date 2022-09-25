@@ -13,12 +13,13 @@ h1,h2,h3{
     text-transform: uppercase;
     font-weight: 900;
 }
-section:nth-child(even){
+section:nth-child(odd){
     background-color: #E6E9EC;
 }
 .fa-flask{
     color: #F1CB00;
 }
+
 .navbar{
     background-color:rgba(0, 0, 0, 0.9);
 }
@@ -30,8 +31,11 @@ section:nth-child(even){
     text-decoration: underline;
     text-decoration-color: #F1CB00;
     text-decoration-thickness: 2px;
-    
     color: white;
+    transition: all 0.4s ease;
+    transform: scale(1.1);
+
+
 }
 .navbar li a:active{
     color: black;
@@ -64,13 +68,25 @@ section:nth-child(even){
 .about-section img{
     width: 100%;
     height: auto;
+    box-shadow: 10px 10px 58px 1px rgba(0,0,0,0.75);
     
     
 }
+
 .card{
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     border-radius: 15px;
+    /* border-color: black; */
     /* box-shadow: 2px black; */
+    transition: all 0.4s ease;
+}
+.classes-section a{
+    background-color: #F1CB00;
+    
+}
+.classes-section .card:hover{
+    box-shadow: 10px 10px 58px 1px rgba(0,0,0,0.75);
+    transform: scale(1.1);
 }
 
 .get-started-section .card{
@@ -78,24 +94,44 @@ section:nth-child(even){
     height: 400px;
     width: 400px;
     border-radius: 15px;
+    box-shadow: 10px 10px 58px 1px rgba(0,0,0,0.75);
 }
 a{
-    color: #007bff;
+    color: #18ABFF;
     text-decoration: none;
-    background-color: transparent;
-}
+  }
 form{
     border: 1px solid lightgray;
     border-radius: 15px;
-    padding: 10px;
+    padding: 30px;
     max-width: 500px;
+    box-shadow: 10px 10px 58px 1px rgba(0,0,0,0.75);
+
 }
 /* .accordion-section{
     margin-top: 100px;
 } */
+.accordion-button:focus {
+    box-shadow: none;
+}
+.accordion-button.current a {
+   color: white;
+}
+.accordion-button.collapsed::before {
+    background: blue;
+  }
+  
+  .accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
 .accordion-item{
-    margin-top: 20px;
-    height:70px;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.accordion-body{
+    background-color: white;
+    border-radius: 5px;
 }
 .accordion h2{
     text-decoration: none;
@@ -103,4 +139,15 @@ form{
 .accordion button{
     text-transform: uppercase;
     font-weight: 900;
+}
+footer{
+    background-color: black;
+    color: white;
+}
+.social-background{
+    background-color: #F1CB00;
+    color: black;
+}
+.social-links a{
+    font-size: 20px;
 }

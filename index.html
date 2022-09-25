@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top ">
+    <nav id="navbar" class="navbar navbar-expand-lg sticky-top ">
       <div class="container-fluid">
         <a href="#" class="navbar-brand"
           >Fight Lab<i class="fa fa-flask"></i>MMA</a
@@ -45,16 +45,19 @@
         >
           <ul class="navbar-nav mr-auto p-3">
             <li class="nav-item">
-              <a href="#" class="nav-link" aria-current="page">Home</a>
+              <a href="./index.html" class="nav-link" >Home</a>
             </li>
             <li class="nav-item">
               <a href="#about-us" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Classes</a>
+              <a href="#classes" class="nav-link">Classes</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="./pricing.html" class="nav-link">Pricing</a>
             </li>
           </ul>
         </div>
@@ -72,7 +75,7 @@
               arts skills? Your're at the right spot. The fight lab team will
               make sure youll walk out the gym everyday with improvement.
             </p>
-            <a href="#class" class="btn btn-outline-light btn-lg" role="button"
+            <a href="./pricing.html" class="btn btn-outline-light btn-lg" role="button"
               >Learn more</a
             >
           </div>
@@ -81,51 +84,11 @@
     </div>
     <!-- Hero section/ jumbotron -->
 
-    <!-- Modal starts here -->
-
-    <div
-      class="modal fade"
-      id="header-modal"
-      tabindex="-1"
-      aria-labelledby="headerModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="headerModalLabel">Reach out</h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="modal-body">
-              <!-- Form body  -->
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" class="btn btn-primary">Submit</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal ends Here -->
-
+   
     <!-- about us Section -->
-    <section>
+    <section id="about-us" class="p-5">
       <div class="container mission-section">
-        <div class="row about-section mb-3 my-3" id="about-us">
+        <div class="row about-section mb-3 my-3" >
           <div
             class="col-sm-12 col-md-5 col-lg-5 about-content my-3 justify-content-center align-items-center"
           >
@@ -137,9 +100,9 @@
               martial arts and fitness. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae deleniti quas! Error repudiandae reiciendis amet cupiditate animi eligendi quos unde, quidem debitis corporis dolores! Explicabo repudiandae cupiditate quidem sint.
             </p>
           </div>
-          <div class="col-sm-12 col-md-7 col-lg-7 my-1 justify-content-center align-items-center">
+          <div class="col-sm-12 col-md-7 col-lg-7 my-1 justify-content-center align-items-center hover-zoom">
             <img
-              class="mx-2 mb-3 shadow-lg shadow-2-strong"
+              class="mx-2 mb-3 "
               src="./img/anastase-maragos-V0kJuMcEujI-unsplash.jpg"
               alt=""
             />
@@ -149,11 +112,13 @@
   </section>
 
     <!-- Start of class section -->
-    <section>
+    <section id="classes">
       <div class="container classes-section mt-5">
         <h2 class="text-center mb-5">Classes</h2>
+        <br>
+        <hr>
         <div class="row ">
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-4">
             <div class="card ">
               <div class="bg-image " >
                   <img src="./img/jonathan-tomas-rX36vcriciQ-unsplash.jpg" alt="" class="img-fluid">
@@ -162,12 +127,14 @@
               <div class="card-body">
                 <h5 class="card-title">Adult Muay Thai</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae delectus vel illo vero, id ipsam impedit, sequi, soluta natus quisquam sit eveniet sunt aut itaque dolores culpa. Maxime, corporis.</p>
-                <a href="#" class="btn btn-primary">Schedule</a>
+                <a href="./pricing.html" class="btn rounded-pill">Pricing</a>
+                <a href="#" class="btn rounded-pill ">Schedule</a>
+
               </div>
             </div>
           </div>
 
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-4">
             <div class="card">
               <div class="bg-image">
                 <img src="./img/timothy-eberly-7MRajrPiTqw-unsplash (1).jpg" class="img-fluid" alt="">
@@ -175,14 +142,14 @@
               <div class="card-body">
                 <h5 class="card-title">Brazilian Jiu Jitsu</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut tempora provident voluptate, distinctio dolor nostrum laboriosam asperiores quisquam porro nemo id optio nihil, sed, animi ducimus omnis? Odio, tempore odit! </p>
-                <a href="#" class="btn btn-primary">Schedule</a>
+                <a href="./pricing.html" class="btn rounded-pill">Pricing</a>
+                <a href="#" class="btn rounded-pill ">Schedule</a>
+
               </div>
             </div>
           </div>
-        </div>
-        
-        <div class="row">
-          <div class="col-sm-12 col-md-6">
+
+          <div class="col-sm-12 col-md-4">
             <div class="card">
               <div class="bg-image">
                   <img src="./img/jonathan-tomas-rX36vcriciQ-unsplash.jpg" alt="" class="img-fluid">
@@ -191,12 +158,32 @@
               <div class="card-body">
                 <h5 class="card-title">Adult Muay Thai</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae delectus vel illo vero, id ipsam impedit, sequi, soluta natus quisquam sit eveniet sunt aut itaque dolores culpa. Maxime, corporis.</p>
-                <a href="#" class="btn btn-primary">Schedule</a>
+                <a href="./pricing.html" class="btn rounded-pill ">Pricing</a>
+                <a href="#" class="btn rounded-pill ">Schedule</a>
+
               </div>
             </div>
           </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <div class="card">
+              <div class="bg-image " data-mdb-ripple="light">
+                  <img src="./img/jonathan-tomas-rX36vcriciQ-unsplash.jpg" alt="" class="img-fluid">
+                
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Adult Muay Thai</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae delectus vel illo vero, id ipsam impedit, sequi, soluta natus quisquam sit eveniet sunt aut itaque dolores culpa. Maxime, corporis.</p>
+                <a href="./pricing.html" class="btn rounded-pill">Pricing</a>
+                <a href="#" class="btn rounded-pill">Schedule</a>
 
-          <div class="col-sm-12 col-md-6">
+              </div>
+            </div>
+        </div>
+
+          <div class="col-sm-12 col-md-4">
             <div class="card">
               <div class="bg-image">
                 <img src="./img/timothy-eberly-7MRajrPiTqw-unsplash (1).jpg" class="img-fluid" alt="">
@@ -204,27 +191,14 @@
               <div class="card-body">
                 <h5 class="card-title">Brazilian Jiu Jitsu</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae delectus vel illo vero, id ipsam impedit, sequi, soluta natus quisquam sit eveniet sunt aut itaque dolores culpa. Maxime, corporis.</p>
-                <a href="#" class="btn btn-primary">Schedule</a>
+                <a href="./pricing.html" class="btn rounded-pill ">Pricing</a>
+                <a href="#" class="btn rounded-pill ">Schedule</a>
+
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-6">
-              <div class="card">
-                <div class="bg-image " data-mdb-ripple="light">
-                    <img src="./img/jonathan-tomas-rX36vcriciQ-unsplash.jpg" alt="" class="img-fluid">
-                  
-                </div>
-                <div class="card-body">
-                  <h5 class="card-title">Adult Muay Thai</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae delectus vel illo vero, id ipsam impedit, sequi, soluta natus quisquam sit eveniet sunt aut itaque dolores culpa. Maxime, corporis.</p>
-                  <a href="#" class="btn btn-primary">Schedule</a>
-                </div>
-              </div>
-          </div>
-          <div class="col-sm-12 col-md-6">
+          <div class="col-sm-12 col-md-4">
             <div class="card">
               <div class="bg-image  " data-mdb-ripple="light">
                   <img src="./img/jonathan-tomas-rX36vcriciQ-unsplash.jpg" alt="" class="img-fluid">
@@ -233,16 +207,20 @@
               <div class="card-body">
                 <h5 class="card-title">Adult Muay Thai</h5>
                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem repudiandae delectus vel illo vero, id ipsam impedit, sequi, soluta natus quisquam sit eveniet sunt aut itaque dolores culpa. Maxime, corporis.</p>
-                <a href="#" class="btn btn-primary">Schedule</a>
+                <a href="./pricing.html" class="btn rounded-pill ">Pricing</a>
+                <a href="#" class="btn rounded-pill ">Schedule</a>
               </div>
             </div>
         </div>
+        </div>
+
+        
         
       </div>
   </section>
 
     <!-- Get started -->
-    <section>
+    <section class="p-2">
       <div class="container get-started-section mt-5">
         <div class="row">
           <div class="col-sm-12 text-center">
@@ -255,7 +233,7 @@
             <h3 class="card-title mt-5 mb-5">Membership</h3>
             <div class="card-body">
               <p class="mb-5">Come on by and give us a try! We'd love to get you setup and ready. Click below to checkout our pricing.</p>
-            <a href="#" class="btn btn-primary btn-lg rounded-pill">Get Started</a>
+            <a href="#" class="btn btn-warning btn-lg rounded-pill">Get Started</a>
             </div>
             
           </div>
@@ -264,22 +242,22 @@
   </section>
 
     <!-- End of get started -->
-    <section>
+    <section id="contact" class="p-5 ">
     <div class="container  mb-5">
       <div class="row justify-content-center text-center mt-5 mb-5">
         <h2 class="fs-1 col-sm-12">Contact us for more info</h2>
       </div>
       <div>
         <div class="row col-sm-12 justify-content-center align-items-center mb-3">
-      <form class="row col-sm-8  g-3">
+      <form class="row col-sm-8  g-3 text-uppercase">
         <div class="container">
           <h3 class="col-sm-12">Phone:
-            <a class="mx-2 form-number" href="#"> (888)-888-8888</a>
+            <a class=" " href="tel:888888888"> (888)-888-8888</a>
           </h3>
         </div>
         <div class="col-md-6">
           <label for="inputName" class="form-label">FullName</label>
-          <input type="text" class="form-control" id="inputName">
+          <input type="text" class="form-control" id="inputName" placeholder="s">
         </div>
         <div class="col-md-6">
           <label for="inputEmail" class="form-label">Email</label>
@@ -287,7 +265,7 @@
         </div>
         <div class="col-md-12">
           <label for="inputTextarea" class="form-label">Message</label>
-          <textarea class="form-control" name="" id="inputTextarea" cols="30" rows="10"></textarea>
+          <textarea class="form-control" name="" id="inputTextarea" cols="30" rows="4"></textarea>
         </div>
         <div class="col-12">
           <button class="btn rounded-pill btn-lg form-button btn-warning">Submit</button>
@@ -301,7 +279,7 @@
 
     <!-- Accordion -->
     
-    <section>
+    <section class="p-5">
     <div class="container accordion-section">
         <div class="container">
           <div class="justify-content-center text-center">
@@ -310,109 +288,88 @@
         </div>
         <br>
         <hr>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header " id="headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                Item num 1
-              </button>
-            </h2>
+        <div class="accordion" id="faqlist">
+          <div class="accordion-item  shadow">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-1">What is Lorem Ipsum?</button>
+              </h2>
+              <div id="content-accordion-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                  </div>
+              </div>
           </div>
-          <div class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample" id="collapseOne">
-            <div class="accordion-body">
-              <strong>This is the first item in accordion body</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam maiores placeat beatae delectus accusantium eligendi. Officia iure voluptatum deleniti corporis, voluptatibus tempora consequatur cumque sint culpa obcaecati eveniet. Molestias, iure.
-            </div>
+      
+          <div class="accordion-item my-5 shadow">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-2">Why do we use it?</button>
+              </h2>
+              <div id="content-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                      It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here.
+                  </div>
+              </div>
           </div>
-          <!-- accordion item 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                is jiu jitsu 
-              </button>
-            </h2>
+      
+          <div class="accordion-item  shadow">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-3">Where does it come from?</button>
+              </h2>
+              <div id="content-accordion-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                  </div>
+              </div>
           </div>
-          <div class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseTwo">
-            <div class="accordion-body">
-              <strong>This is the first item in accordion body</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam maiores placeat beatae delectus accusantium eligendi. Officia iure voluptatum deleniti corporis, voluptatibus tempora consequatur cumque sint culpa obcaecati eveniet. Molestias, iure.
-            </div>
-        </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-              is jiu jitsu 
-            </button>
-          </h2>
-        </div>
-        <div class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample" id="collapseThree">
-          <div class="accordion-body">
-            <strong>This is the first item in accordion body</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam maiores placeat beatae delectus accusantium eligendi. Officia iure voluptatum deleniti corporis, voluptatibus tempora consequatur cumque sint culpa obcaecati eveniet. Molestias, iure.
+      
+          <div class="accordion-item  shadow">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-4">Where does it come from?</button>
+              </h2>
+              <div id="content-accordion-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                  </div>
+              </div>
           </div>
-      </div>
-
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-            is jiu jitsu 
-          </button>
-        </h2>
-      </div>
-      <div class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample" id="collapseThree">
-        <div class="accordion-body">
-          <strong>This is the first item in accordion body</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam maiores placeat beatae delectus accusantium eligendi. Officia iure voluptatum deleniti corporis, voluptatibus tempora consequatur cumque sint culpa obcaecati eveniet. Molestias, iure.
-        </div>
-    </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="headingThree">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-          is jiu jitsu 
-        </button>
-      </h2>
-    </div>
-    <div class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample" id="collapseThree">
-      <div class="accordion-body">
-        <strong>This is the first item in accordion body</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam maiores placeat beatae delectus accusantium eligendi. Officia iure voluptatum deleniti corporis, voluptatibus tempora consequatur cumque sint culpa obcaecati eveniet. Molestias, iure.
-      </div>
-  </div>
-
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-        is jiu jitsu 
-      </button>
-    </h2>
-  </div>
-  <div class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#accordionExample" id="collapseThree">
-    <div class="accordion-body">
-      <strong>This is the first item in accordion body</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam maiores placeat beatae delectus accusantium eligendi. Officia iure voluptatum deleniti corporis, voluptatibus tempora consequatur cumque sint culpa obcaecati eveniet. Molestias, iure.
-    </div>
-  </div>
-
+      
+          <div class="accordion-item  shadow">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-5">Where does it come from?</button>
+              </h2>
+              <div id="content-accordion-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                  <div class="accordion-body">
+                      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+                  </div>
+              </div>
 </div>
 </section>
   
-<footer class="text-center text-lg-start ">
+<footer class="text-center text-lg-start w-full">
   <!-- Social Media -->
-<div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
-<!-- Left -->
-  <div class="me-5 d-none d-lg-block">
-    <span>Get connected with us on social networks</span>
+<div class="social-background">
+  <div class="container  ">
+    <div class="row py-4 d-flex align-items-center border-bottom ">
+    <!-- Left -->
+      <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+        <h6>Get connected with us on social networks</h6>
+      </div>
+    <!-- Left -->
+    <!-- Right -->
+      <div class="col-md-6 col-lg-7 text-center text-md-right social-links ">
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="#" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+      <!-- End of right -->
+    </div>
   </div>
-<!-- Left -->
-<!-- Right -->
-  <div class="text-2xl">
-    <a href="#" class="me-4 text-reset">
-      <i class="fab fa-facebook-f"></i>
-    </a>
-    <a href="#" class="me-4 text-reset">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="#" class="me-4 text-reset">
-      <i class="fab fa-instagram"></i>
-    </a>
-  </div>
-  <!-- End of right -->
 </div>
 
 <div>
