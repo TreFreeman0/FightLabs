@@ -8,7 +8,7 @@ body{
     font-family:'Poppins',sans-serif;
 }
 h1,h2,h3{
-    text-decoration: underline solid;
+    /* text-decoration: 2px underline solid; */
     text-decoration-color: #F1CB00;
     text-transform: uppercase;
     font-weight: 900;
@@ -33,7 +33,7 @@ section:nth-child(odd){
     text-decoration-thickness: 2px;
     color: white;
     transition: all 0.4s ease;
-    transform: scale(1.1);
+    transform: scale(1.2);
 
 
 }
@@ -80,14 +80,17 @@ section:nth-child(odd){
     /* box-shadow: 2px black; */
     transition: all 0.4s ease;
 }
+.bg-image{
+    height: 50%;
+}
 .classes-section a{
     background-color: #F1CB00;
     
 }
-.classes-section .card:hover{
+/* .classes-section .card:hover{
     box-shadow: 10px 10px 58px 1px rgba(0,0,0,0.75);
     transform: scale(1.1);
-}
+} */
 
 .get-started-section .card{
     margin-top: 80px;
@@ -96,11 +99,15 @@ section:nth-child(odd){
     border-radius: 15px;
     box-shadow: 10px 10px 58px 1px rgba(0,0,0,0.75);
 }
+.modal label{
+    color: black;
+    font-weight: bold;
+}
 a{
     color: #18ABFF;
     text-decoration: none;
   }
-form{
+#contact form{
     border: 1px solid lightgray;
     border-radius: 15px;
     padding: 30px;
