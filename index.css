@@ -7,12 +7,15 @@ body{
     overflow-x: hidden;
     font-family:'Poppins',sans-serif;
 }
-h1,h2,h3{
-    /* text-decoration: 2px underline solid; */
+h1,h2{
+    content: "";
+    text-decoration: 2px underline solid; 
     text-decoration-color: #F1CB00;
+    text-decoration-thickness: 5px;
     text-transform: uppercase;
     font-weight: 900;
 }
+
 section:nth-child(odd){
     background-color: #E6E9EC;
 }
@@ -33,7 +36,7 @@ section:nth-child(odd){
     text-decoration-thickness: 2px;
     color: white;
     transition: all 0.4s ease;
-    transform: scale(1.2);
+    transform: translatey(-10px)
 
 
 }
@@ -72,25 +75,30 @@ section:nth-child(odd){
     
     
 }
+.bg-image{
+    height: 500px;
+}
 
 .card{
     margin-bottom: 30px;
     border-radius: 15px;
     /* border-color: black; */
     /* box-shadow: 2px black; */
-    transition: all 0.4s ease;
+    transition:  0.8s ease-in-out;
 }
-.bg-image{
-    height: 50%;
+.card-img-top{
+    height: 100%;
+    object-fit: cover;
 }
-.classes-section a{
+
+.class-content a{
     background-color: #F1CB00;
     
 }
-/* .classes-section .card:hover{
+.class-content .card:hover{
     box-shadow: 10px 10px 58px 1px rgba(0,0,0,0.75);
-    transform: scale(1.1);
-} */
+    /* transform: scale(1.1); */
+}
 
 .get-started-section .card{
     margin-top: 80px;
@@ -151,10 +159,86 @@ footer{
     background-color: black;
     color: white;
 }
+h6{
+    text-decoration: 1px solid underline;
+    
+}
 .social-background{
     background-color: #F1CB00;
     color: black;
 }
 .social-links a{
     font-size: 20px;
+}
+.social-links a i:hover{
+    transition: all 0.5s ease-in;
+    transform: translatey(-10px)
+}
+.testimonial-section{
+    height: 600px;
+}
+.carousel{
+    margin: 50px auto;
+    padding: 0 70px;
+}
+.carousel-item{
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+    min-height: 390px;
+}
+.carousel .item .img-box{
+    width: 200px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 50%;
+}
+.carousel .img-box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 50%;
+}
+.carousel .testimonial{
+    padding: 30px 0 10px ;
+}
+.carousel .overview{
+    text-transform: uppercase;
+
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+   }
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+  }
+.hide{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.hideY{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-25%);
+    transition: all 2s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.accordion:nth-child(2){
+    transition-delay: 200ms;
+}
+.accordion:nth-child(3){
+    transition-delay: 400ms;
+}
+.accordion:nth-child(4){
+    transition-delay: 600ms;
+}
+.accordion:nth-child(5){
+    transition-delay: 800ms;
 }
