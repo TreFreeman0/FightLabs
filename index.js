@@ -8,9 +8,11 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 const hiddenElements = document.querySelectorAll(".hide");
-const hiddenElementsY=document.querySelectorAll(".hideY")
+const hiddenElementsY= document.querySelectorAll(".hideY")
+const hiddenElementsX = document.querySelectorAll(".hideR")
 hiddenElements.forEach((el) => observer.observe(el));
 hiddenElementsY.forEach((el) => observer.observe(el));
+hiddenElementsX.forEach((el) => observer.observe(el))
 
 
 // Form Validation
