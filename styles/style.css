@@ -125,6 +125,10 @@ section:nth-child(odd) {
   box-shadow: 10px 10px 58px 1px rgba(0, 0, 0, 0.75);
 }
 
+.accordion-section {
+  height: auto;
+}
+
 .accordion .accordion-button {
   text-transform: uppercase;
   font-weight: 900;
